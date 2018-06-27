@@ -17,6 +17,10 @@
 
       <!-- v-html binds html directly into dom from vue js-->
       <p v-html="urlTag"></p>
+	  
+	  <!-- Two-way Data binding -->
+	  <input type="text" v-model="name" />
+	  {{ name }}
     </div>
 
     <script src="app.js"></script>
