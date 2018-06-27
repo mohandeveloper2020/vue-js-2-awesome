@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="vue-app">
+      <h1>Events</h1>
+
+      <p>My age is {{ age }}</p>
+
+      <!-- .once is a event modifier, which works only once when button is clicked -->
+      <button v-on:click="add(1)">Add one year</button>
+      <button v-on:click.once="subtract(1)">Subtract one year</button>
+
+      <!-- .prevent is a event modifier, which prevents the link not to open with the url (event.preventDefault()) -->
+      <a v-on:click="click" href="http://www.google.com">Google</a>
+      <a v-on:click.prevent="click" href="http://www.google.com">Google</a>
+
+      <!-- other methods area
+          .once
+          .prevent
+          .self
+          .capture
+          .stop
+          .passive
+          learn here : https://vuejs.org/v2/guide/events.html#Event-Modifiers
+        -->
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -7,9 +7,14 @@
   </head>
   <body>
     <div id="vue-app">
-      <h1>{{ greet('afternoon') }}</h1>
-      <p>Name : {{ name }}</p>
-      <p>Job : {{ job }}</p>
+      <h1>Events</h1>
+
+
+      <p>My age is {{ age }}</p>
+
+      <button v-on:click="age++">Add one year</button>
+      <button v-on:click="age--">Subtract one year</button>
+
     </div>
 
     <script src="app.js"></script>
